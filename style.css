@@ -1,0 +1,223 @@
+.content-up {
+  position: absolute;
+  font-size: 70px;
+  top: 40px;
+  left: 60px;
+  width: 600px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  animation: fadeUp 4s forwards;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-center {
+  position: absolute;
+  font-size: 24px;
+  left: 60px;
+  top: 200px;
+  width: 600px;
+  height: 200px;
+  background-color: rgba(255, 255, 255);
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  animation: fadeInCenter 4s forwards;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-down {
+  position: absolute;
+  font-size: 20px;
+  left: 60px;
+  top: 500px;
+  width: 600px;
+  background-color: rgba(255, 255, 255);
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  animation: fadeDown 4s forwards;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInCenter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.back {
+  background-color: rgba(240, 255, 255, 0.5);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-image {
+  position: fixed;
+  left: -500px;
+  width: 200%;
+  height: 200%;
+  object-fit: contain;
+  z-index: -1;
+  opacity: 0.7;
+  animation: moveDiagonal 20s infinite linear;
+}
+
+/* @keyframes moveDiagonal {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-10%, -10%);
+  }
+  50% {
+    transform: translate(-20%, 0);
+  }
+  75% {
+    transform: translate(-10%, 10%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+} */
+
+.login-image {
+  position: fixed;
+  object-fit: contain;
+  top: -12px;
+  width: 105%;
+  height: 105%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.content-container {
+  position: relative;
+  height: 100%;
+  margin-left: 50px;
+}
+
+.slide-in-panel {
+  position: fixed;
+  display: flex;
+  right: -400px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 455px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  overflow: hidden;
+  animation: slideIn 2s forwards;
+  font-size: 20px;
+}
+
+@keyframes slideIn {
+  from {
+    right: -400px;
+  }
+  to {
+    right: 50px;
+  }
+}
+
+.text-style {
+  position: fixed;
+  top: 40%;
+  left: 20px;
+  font-size: 18px;
+  color: #333;
+  margin: 10px;
+  text-align: left;
+  font-weight: bold;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+.passwd-style {
+  position: fixed;
+  top: 60%;
+  left: 20px;
+  font-size: 18px;
+  color: #333;
+  margin: 10px;
+  text-align: left;
+  font-weight: bold;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.text-style:hover,
+.passwd-style:hover,
+.button-style:hover,
+.submit-style:hover {
+  opacity: 1;
+}
+
+.text-style:focus,
+.passwd-style:focus {
+  opacity: 1;
+  outline: none; /* 移除默认的焦点轮廓 */
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.3); /* 添加自定义焦点效果 */
+}
+
+.button-style {
+  position: fixed;
+  top: 80%;
+  left: 90px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+.submit-style {
+  position: fixed;
+  top: 80%;
+  right: 40px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 0.5;
+}
