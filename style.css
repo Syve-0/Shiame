@@ -203,7 +203,6 @@
   border-radius: 5px;
   opacity: 0.5;
 }
-
 .submit-style {
   position: fixed;
   top: 80%;
@@ -220,4 +219,124 @@
   cursor: pointer;
   border-radius: 5px;
   opacity: 0.5;
+}
+
+/* .content-up {
+  position: relative;
+  width: 40%;
+  left: 30%;
+  top: 20px;
+  font-size: 60px;
+  margin: 10px auto;
+  padding: 15px;
+} */
+
+/* 手机适配 - 当屏幕宽度小于768px时 */
+@media screen and (max-width: 900px) {
+  .content-up {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    top: 20px;
+    font-size: 40px;
+    margin: auto;
+    padding: auto;
+  }
+
+  .content-center {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    top: 140px;
+    font-size: 18px;
+    margin: auto;
+    padding: auto;
+    height: 100px;
+  }
+
+  .content-down {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    top: 300px;
+    font-size: 16px;
+    margin: auto;
+    padding: auto;
+  }
+
+  .slide-in-panel {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(20%);
+    width: 250px;
+    top: 350px;
+    right: auto;
+    left: 60px;
+    margin: 0 auto;
+    padding: 15px;
+    animation: slideIn 2s forwards;
+    height: 400px;
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .text-style,
+  .passwd-style {
+    position: relative;
+    width: 90%;
+    left: 0%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .text-style {
+    top: 150px;
+  }
+
+  .passwd-style {
+    top: 200px;
+  }
+
+  .button-style,
+  .submit-style {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    margin: 10px auto;
+    display: block;
+    width: 80px;
+    display: inline-block;
+  }
+
+  .button-style {
+    left: 0%;
+    top: 230px;
+  }
+
+  .submit-style {
+    left: 0%;
+    top: 230px;
+  }
+
+  .background-image {
+    width: 150%;
+    height: 150%;
+  }
 }
